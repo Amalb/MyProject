@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card mb-3">
+                <div class="card-header">Detected Events
+                </div>
+                <div class="card-block">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" width="100%" id="dataTable" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Event ID</th>
+                                    <th>Key words</th>
+
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>Event ID</th>
+                                    <th>Key words</th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                {%for i in range(0,len)%}
+                                <tr>
+                                    <td>{{i+1}}</td>
+                                    <td>{{ev[i]}}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+</div>
+</div>
+
+
+
+{% endblock %}

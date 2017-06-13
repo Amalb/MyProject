@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card mb-3">
+    <div class="card-header">Sentiment Analysis</div>
+        <div class="card-block">
+             <!-- Icon Cards -->
+            <div class="row">
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <div class="card card-inverse card-success o-hidden h-100">
+                        <div class="card-block">
+                            <div class="mr-5">
+                                {{list[0]}} % Positive
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <div class="card card-inverse card-danger o-hidden h-100">
+                        <div class="card-block">
+                            <div class="mr-5">
+                                {{list[1]}} % Negative
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-3">
+                    <div class="card card-inverse card-primary o-hidden h-100">
+                        <div class="card-block">
+                            <div class="mr-5">
+                                {{list[2]}} % Neutral
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                </div>
+
+        </div>
+</div>
+{% endblock %}
